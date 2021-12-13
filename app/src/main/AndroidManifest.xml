@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrenApp">
         <activity
+            android:name=".AccountGestionProActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdvancedSearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignupProActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignupClientActivity"
+            android:exported="true" />
+        <activity
             android:name=".AddPromotionActivity"
             android:exported="true" />
         <activity
@@ -41,12 +53,6 @@
             android:exported="true" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,6 +60,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
