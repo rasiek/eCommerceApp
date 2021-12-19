@@ -6,24 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".SearchFragment">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="60dp"
-        android:hint="@string/search_bar_placeholder"
-        android:layout_marginHorizontal="50dp"
-        android:id="@+id/search_bar"
-        />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/search_bar"
-        android:layout_marginHorizontal="130dp"
+    <ListView
+        android:id="@+id/my_list"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
         android:layout_marginTop="20dp"
-        android:text="@+string/search_bar_placeholder"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        />
+    <TextView
+        android:id="@+id/advanced_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:text="Advanced search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_list" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
