@@ -7,19 +7,79 @@
     tools:context=".SignupClientActivity"
     android:orientation="vertical">
 
-    <LinearLayout
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/test_ll"
-        android:orientation="vertical">
+        android:layout_marginVertical="30dp"
+        android:gravity="clip_horizontal"
+        android:text="Sign up"
+        android:textSize="50dp" />
 
-    </LinearLayout>
+    <EditText
+        android:id="@+id/firstname_client"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/firstname" />
+
+    <EditText
+        android:id="@+id/lastname_client"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/lastname" />
+
+    <EditText
+        android:id="@+id/email_client"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/email" />
+
+    <EditText
+        android:id="@+id/phone_client"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/phone" />
+
+    <EditText
+        android:id="@+id/address_client"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/address" />
+
+    <EditText
+        android:id="@+id/city_client"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/city" />
+
+    <EditText
+        android:id="@+id/password_client"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/password" />
+
+    <EditText
+        android:id="@+id/confirm_password_client"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/confirm_passsword" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/form_home_btn"
-        android:layout_marginTop="40dp"
-        android:text="Save"/>
+        android:text="SING UP"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
 
 </LinearLayout>

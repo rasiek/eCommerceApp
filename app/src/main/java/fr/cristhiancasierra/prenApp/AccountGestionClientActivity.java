@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AccountGestionActivity extends AppCompatActivity {
+public class AccountGestionClientActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_account_gestion);
+        setContentView(R.layout.activity_account_gestion_client);
     }
 }
