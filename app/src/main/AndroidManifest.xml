@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="fr.cristhiancasierra.prenApp">
+    package="fr.cristhiancasierra.prenApp" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PrenApp">
+        android:theme="@style/Theme.PrenApp" >
+        <activity
+            android:name=".AccountGestionClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasswordRecoveryActivity"
+            android:exported="false" />
         <activity
             android:name=".AccountGestionProActivity"
             android:exported="true" />
@@ -34,13 +40,13 @@
             android:name=".OrderActivity"
             android:exported="true" />
         <activity
-            android:name=".AccountGestionActivity"
+            android:name=".AccountClientActivity"
             android:exported="true" />
         <activity
             android:name=".CartActivity"
             android:exported="true" />
         <activity
-            android:name=".SearchActivity"
+            android:name=".XActivity"
             android:exported="true" />
         <activity
             android:name=".SignupActivity"
@@ -53,7 +59,7 @@
             android:exported="true" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -64,7 +70,7 @@
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SearchActivity"
             android:exported="true" />
     </application>
 

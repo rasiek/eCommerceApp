@@ -7,21 +7,19 @@
     tools:context=".SearchActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Search"
-        android:textSize="40dp"
-        />
+    <ListView
+        android:id="@+id/my_list"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp" />
+
     <TextView
         android:id="@+id/advanced_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Advanced search"
         android:layout_gravity="right"
         android:layout_marginTop="30dp"
         android:layout_marginRight="10dp"
         android:clickable="true"
-        />
+        android:text="Advanced search" />
 
 </LinearLayout>

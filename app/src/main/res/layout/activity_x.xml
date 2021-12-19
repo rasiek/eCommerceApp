@@ -4,16 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccountGestionProActivity"
+    tools:context=".XActivity"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="50dp"
-        android:gravity="clip_horizontal"
-        android:text="gestion account pro"
-        android:textSize="50dp"/>
-
+        android:text="Search"
+        android:textSize="40dp"
+        />
+    <TextView
+        android:id="@+id/advanced_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advanced search"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        />
 
 </LinearLayout>

@@ -47,7 +47,7 @@ public class HomeActivity extends AppCompatActivity {
         compteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, AccountGestionActivity.class);
+                Intent intent = new Intent(HomeActivity.this, AccountClientActivity.class);
                 startActivity(intent);
             }
         });

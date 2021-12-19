@@ -14,6 +14,28 @@
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_signup_client.xml" value="0.13697916666666668" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_signup_pro.xml" value="0.15104166666666666" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_account_gestion.xml" value="0.21" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_account_gestion_client.xml" value="0.14010416666666667" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_account_gestion_pro.xml" value="0.15416666666666667" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_add_product.xml" value="0.15" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_add_promotion.xml" value="0.18" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_advanced_search.xml" value="0.25" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_home.xml" value="0.15" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_home_pro.xml" value="0.13" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_main.xml" value="0.11865942028985507" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_order.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_password_recovery.xml" value="0.1375" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_product.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_search.xml" value="0.22" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_sign_up_page.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_signup.xml" value="0.11639492753623189" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_signup_client.xml" value="0.18" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_signup_pro.xml" value="0.21" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_splash.xml" value="0.18" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/layout/activity_x.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/menu/my_menu.xml" value="0.18" />
+        <entry key="..\:/Users/kenza/Documents/mobile/eCommerceApp/app/src/main/res/menu/search_activity.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
