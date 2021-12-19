@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrenApp">
         <activity
+            android:name=".BaseClientActivity"
+            android:exported="true" />
+        <activity
             android:name=".AccountGestionProActivity"
             android:exported="true" />
         <activity

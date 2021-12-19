@@ -4,22 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupClientActivity"
-    android:orientation="vertical">
+    tools:context=".BaseClientActivity">
 
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/test_ll"
-        android:orientation="vertical">
+        app:menu="@menu/client_menu"
+        android:layout_gravity="bottom"/>
 
-    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/form_home_btn"
-        android:layout_marginTop="40dp"
-        android:text="Save"/>
 
 </LinearLayout>
