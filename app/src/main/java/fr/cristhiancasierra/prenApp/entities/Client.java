@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 public class Client {
 
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    private long id;
     private String firstname;
     private String lastname;
     private String email;
@@ -16,16 +16,15 @@ public class Client {
     private String address;
     private String city;
 
-    public Client (String firstname, String lastname, String email, String password, String address, String city) {
+    /*public Client (String firstname, String lastname, String email, String password, String address, String city) {
         this.address = address;
-        this.lastname = address;
-        this.firstname = address;
-        this.email = address;
-        this.password = address;
-        this.address = address;
-        this.city = address;
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.email = email;
+        this.password = password;
+        this.city = city;
 
-    }
+    }*/
 
 
     public String getFirstname() {
@@ -76,11 +75,11 @@ public class Client {
         this.city = city;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 }

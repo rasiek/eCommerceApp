@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pro_nav"
+    app:startDestination="@id/home_pro_fragment">
+
+    <fragment
+        android:id="@+id/home_pro_fragment"
+        android:name="fr.cristhiancasierra.prenApp.HomeProFragment"
+        android:label="fragment_home_pro"
+        tools:layout="@layout/fragment_home_pro" >
+        <action
+            android:id="@+id/action_homeProFragment_to_promotionsFragment"
+            app:destination="@id/promotionsFragment" />
+        <action
+            android:id="@+id/action_homeProFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_homeProFragment_to_ordersFragment"
+            app:destination="@id/order_fragment" />
+        <action
+            android:id="@+id/action_homeProFragment_to_accountProFragment"
+            app:destination="@id/pro_account_fragment" />
+        <action
+            android:id="@+id/action_homeProFragment_to_productsFragment"
+            app:destination="@id/product_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/order_fragment"
+        android:name="fr.cristhiancasierra.prenApp.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/product_fragment"
+        android:name="fr.cristhiancasierra.prenApp.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_productsFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pro_account_fragment"
+        android:name="fr.cristhiancasierra.prenApp.AccountProFragment"
+        android:label="fragment_account_pro"
+        tools:layout="@layout/fragment_account_pro" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="fr.cristhiancasierra.prenApp.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/promotionsFragment"
+        android:name="fr.cristhiancasierra.prenApp.PromotionsFragment"
+        android:label="fragment_promotions"
+        tools:layout="@layout/fragment_promotions" >
+        <action
+            android:id="@+id/action_promotionsFragment_to_addPromoFragment"
+            app:destination="@id/addPromoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPromoFragment"
+        android:name="fr.cristhiancasierra.prenApp.AddPromoFragment"
+        android:label="fragment_add_promo"
+        tools:layout="@layout/fragment_add_promo" />
+</navigation>

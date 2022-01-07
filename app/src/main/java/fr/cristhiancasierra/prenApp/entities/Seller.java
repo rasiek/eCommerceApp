@@ -19,14 +19,12 @@ public class Seller {
 
     public Seller (String firstname, String lastname, String email, String password, String address, String city, String storeName) {
         this.address = address;
-        this.lastname = address;
-        this.firstname = address;
-        this.email = address;
-        this.password = address;
-        this.address = address;
-        this.city = address;
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.email = email;
+        this.password = password;
+        this.city = city;
         this.storeName = storeName;
-
     }
 
     public String getFirstname() {

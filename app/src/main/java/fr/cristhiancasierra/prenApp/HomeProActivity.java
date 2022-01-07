@@ -1,108 +1,48 @@
 package fr.cristhiancasierra.prenApp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavArgument;
+import androidx.navigation.NavController;
+import androidx.navigation.NavGraph;
+import androidx.navigation.NavInflater;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class HomeProActivity extends AppCompatActivity {
+
+    private NavInflater navInflater;
+    private NavGraph graph;
+    private NavArgument argument;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_pro);
 
-        ImageButton product = findViewById(R.id.product_btn);
-        ImageButton ordersPro = findViewById(R.id.ordersPro_btn);
-        ImageButton promos = findViewById(R.id.promos_btn);
-        ImageButton accountPro = findViewById(R.id.accountPro_btn);
-        ImageButton  logout = findViewById(R.id.logout_btn);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_pro);
+
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_container_pro);
+        NavController navController = navHostFragment.getNavController();
+
+        navInflater = navController.getNavInflater();
+        graph = navInflater.inflate(R.navigation.pro_nav);
 
 
-        product.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeProActivity.this, ProductActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-        ordersPro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeProActivity.this, OrderActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-        promos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeProActivity.this, AddPromotionActivity.class);
-                startActivity(intent);
-
-            }
-        });
+        navController.setGraph(graph);
 
 
-        accountPro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeProActivity.this, AccountGestionProActivity.class);
-                startActivity(intent);
+        NavigationUI.setupWithNavController(
+                bottomNavigationView,
+                navController
+        );
 
-            }
-        });
-
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeProActivity.this, SplashActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-
-        ImageButton homePro = findViewById(R.id.homepro_btn);
-        ImageButton addProduct = findViewById(R.id.add_product_btn);
-        ImageButton orders = findViewById(R.id.orders_btn);
-        ImageButton comptePro = findViewById(R.id.comptepro_btn);
-
-        homePro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeProActivity.this, HomeProActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        addProduct.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeProActivity.this, ProductActivity.class);
-                startActivity(intent);
-            }
-        });
-        orders.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeProActivity.this, OrderActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        comptePro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeProActivity.this, AccountGestionProActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
 }

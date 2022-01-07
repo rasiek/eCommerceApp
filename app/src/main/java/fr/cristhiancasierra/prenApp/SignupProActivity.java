@@ -39,7 +39,7 @@ public class SignupProActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
 
                         Intent intent = new Intent(SignupProActivity.this, HomeProActivity.class);
-                startActivity(intent);
+                        startActivity(intent);
             }
         });
                 builder.setNegativeButton("Annuler", null);
