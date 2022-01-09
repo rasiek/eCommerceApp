@@ -35,8 +35,17 @@
         app:layout_constraintTop_toBottomOf="@id/search_bar_home"
         android:layout_marginHorizontal="130dp"
         android:layout_marginTop="20dp"
+        android:id="@+id/btn_home_search"
         android:text="@+string/search_bar_placeholder"
 
         />
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/btn_home_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_linear"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package fr.cristhiancasierra.prenApp.dao;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -16,13 +17,13 @@ import fr.cristhiancasierra.prenApp.entities.Seller;
 public interface SellerDao {
 
     @Query("Select * from seller")
-    List<Client> getListSellers();
+    List<Seller> getListSellers();
 
     @Query("SELECT * FROM seller where id = :seller_id")
-    Client getSellerById(int seller_id);
+    LiveData<Seller> getSellerById(long seller_id);
 
     @Insert
-    void insertSeller(Seller seller);
+    long insertSeller(Seller seller);
 
     @Update
     void updateSeller(Seller seller);

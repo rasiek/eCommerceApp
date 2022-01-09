@@ -43,6 +43,11 @@ public class ClientRepository {
         return client;
     }
 
+    public LiveData<Client> getClientByPass(String pass, String email) {
+        client = clientDao.getClientByPass(pass, email);
+        return client;
+    }
+
     public void updateClient(Client client) {
 
         AppDatabase.dataWriteExecutor.execute(()-> {

@@ -16,7 +16,7 @@ public class Client {
     private String address;
     private String city;
 
-    /*public Client (String firstname, String lastname, String email, String password, String address, String city) {
+    public Client (String firstname, String lastname, String email, String password, String address, String city) {
         this.address = address;
         this.lastname = lastname;
         this.firstname = firstname;
@@ -24,7 +24,7 @@ public class Client {
         this.password = password;
         this.city = city;
 
-    }*/
+    }
 
 
     public String getFirstname() {

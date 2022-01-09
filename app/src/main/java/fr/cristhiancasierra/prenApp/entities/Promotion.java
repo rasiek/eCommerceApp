@@ -13,7 +13,7 @@ public class Promotion {
     private int sellerId;
     private int productId;
     private Date dateStart;
-    private Date DateEnd;
+    private Date dateEnd;
     private float reduction;
 
 
@@ -21,7 +21,7 @@ public class Promotion {
         this.sellerId = sellerId;
         this.productId = productId;
         this.dateStart = dateStart;
-        DateEnd = dateEnd;
+        this.dateEnd = dateEnd;
         this.reduction = reduction;
     }
 
@@ -65,11 +65,11 @@ public class Promotion {
     }
 
     public Date getDateEnd() {
-        return DateEnd;
+        return dateEnd;
     }
 
     public void setDateEnd(Date dateEnd) {
-        DateEnd = dateEnd;
+        this.dateEnd = dateEnd;
     }
 
     public float getReduction() {

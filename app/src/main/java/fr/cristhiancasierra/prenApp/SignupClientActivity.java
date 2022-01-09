@@ -64,14 +64,8 @@ public class SignupClientActivity extends AppCompatActivity {
                         /*client = new Client(firstname.getText().toString(), lastname.getText().toString(), email.getText().toString(),
                                 password.getText().toString(), address.getText().toString(), city.getText().toString());*/
 
-                        client = new Client();
-
-                        client.setFirstname(firstname.getText().toString());
-                        client.setLastname(lastname.getText().toString());
-                        client.setAddress(address.getText().toString());
-                        client.setPassword(password.getText().toString());
-                        client.setEmail(email.getText().toString());
-                        client.setCity(city.getText().toString());
+                        client = new Client(firstname.getText().toString(), lastname.getText().toString(), email.getText().toString(),
+                                password.getText().toString(), address.getText().toString(), city.getText().toString());
 
                         Long id = clientViewModel.insert(client);
                         idString = String.valueOf(id);

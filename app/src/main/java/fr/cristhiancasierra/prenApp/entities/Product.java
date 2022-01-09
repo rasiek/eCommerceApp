@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 public class Product {
 
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    private long id;
     private String name;
     private String maker;
     private String description;
@@ -18,9 +18,11 @@ public class Product {
     private String size;
     private String weight;
     private String status;
+    private int src;
+    private long sellerId;
 
 
-    public Product(String name, String maker, String description, String model, String price, String color, String size, String weight, String status) {
+    public Product(String name, String maker, String description, String model, String price, String color, String size, String weight, String status, int src, long sellerId) {
         this.name = name;
         this.maker = maker;
         this.description = description;
@@ -30,6 +32,8 @@ public class Product {
         this.size = size;
         this.weight = weight;
         this.status = status;
+        this.src = src;
+        this.sellerId = sellerId;
     }
 
     public Product(String name, String price) {
@@ -41,11 +45,11 @@ public class Product {
         this.color = color;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -115,5 +119,21 @@ public class Product {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public int getSrc() {
+        return src;
+    }
+
+    public void setSrc(int src) {
+        this.src = src;
+    }
+
+    public long getSellerId() {
+        return sellerId;
+    }
+
+    public void setSellerId(long sellerId) {
+        this.sellerId = sellerId;
     }
 }
