@@ -3,6 +3,8 @@ package fr.cristhiancasierra.prenApp;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavArgument;
 import androidx.navigation.NavController;
@@ -35,6 +37,11 @@ public class HomeActivity extends AppCompatActivity {
     private NavInflater navInflater;
     private NavGraph graph;
     private NavArgument argument;
+
+    private FragmentManager fragmentManager;
+    private Fragment currentFragment;
+    private Fragment fragment;
+
 
 
 

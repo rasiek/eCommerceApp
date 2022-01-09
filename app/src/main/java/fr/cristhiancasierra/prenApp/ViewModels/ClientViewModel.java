@@ -17,6 +17,7 @@ public class ClientViewModel extends AndroidViewModel {
     private LiveData<List<Client>> allClients;
     private LiveData<Client> client;
     private long id;
+    private int getClientId;
 
     public ClientViewModel(@NonNull Application application) {
         super(application);
@@ -31,7 +32,14 @@ public class ClientViewModel extends AndroidViewModel {
 
     public LiveData<Client> getClientById(int id) {
 
+        this.getClientId = id;
         client = clientRepository.getClientById(id);
+        return client;
+    }
+
+    public LiveData<Client> getClientByPass(String pass, String email) {
+
+        client = clientRepository.getClientByPass(pass, email);
         return client;
     }
 
@@ -46,6 +54,10 @@ public class ClientViewModel extends AndroidViewModel {
 
     public void update(Client c) {
         clientRepository.updateClient(c);
+    }
+
+    public int getGetClientId(){
+        return getClientId;
     }
 
 }

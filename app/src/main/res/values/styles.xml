@@ -3,4 +3,15 @@
     <style name="appBbtn">
 
     </style>
+
+    <style name="HorizontalLine">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/horizontal_line_height</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:layout_marginTop">@dimen/large_spacer</item>
+        <item name="android:layout_marginBottom">@dimen/large_spacer</item>
+    </style>
+
+
+
 </resources>

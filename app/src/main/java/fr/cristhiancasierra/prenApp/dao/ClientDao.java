@@ -32,4 +32,7 @@ public interface ClientDao {
     @Query("DELETE from client")
     void deleteAll();
 
+    @Query("SELECT * FROM client WHERE password = :pass AND email = :email")
+    LiveData<Client> getClientByPass(String pass, String email);
+
 }

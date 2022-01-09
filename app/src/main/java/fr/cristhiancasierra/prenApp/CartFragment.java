@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -14,7 +16,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import fr.cristhiancasierra.prenApp.ViewModels.CartWithProductsViewModel;
 import fr.cristhiancasierra.prenApp.ViewModels.ClientViewModel;
+import fr.cristhiancasierra.prenApp.ViewModels.ProductViewModel;
+import fr.cristhiancasierra.prenApp.adapters.CartListAdapter;
 import fr.cristhiancasierra.prenApp.dao.ClientDao;
 import fr.cristhiancasierra.prenApp.db.AppDatabase;
 import fr.cristhiancasierra.prenApp.entities.Client;
@@ -28,7 +33,9 @@ public class CartFragment extends Fragment {
     private Button btn;
     private LinearLayout layout;
     private Client client;
-    private ClientViewModel clientViewModel;
+    private CartWithProductsViewModel cartWithProductsViewModel;
+    private RecyclerView cartRecyclerView;
+    private long cartId;
 
 
     public CartFragment() {
@@ -50,45 +57,19 @@ public class CartFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cart, container, false);
-        btn = new Button(getContext());
+        cartRecyclerView = view.findViewById(R.id.cart_recycler_view);
+        final CartListAdapter cartListAdapter = new CartListAdapter(new CartListAdapter.CartProductDiff());
 
-        btn.setText("Db Test");
-        layout = view.findViewById(R.id.cart_fragment);
+        cartRecyclerView.setAdapter(cartListAdapter);
+        cartRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                clientViewModel = new ViewModelProvider(requireActivity()).get(ClientViewModel.class);
-
-                /*client = new Client("Camilo", "Casierra", "cc@tst.com",
-                        "12345", "570 Route de Ganges", "Montpellier");*/
-
-                /*clientViewModel.insert(client);*/
-                /*clientDao = AppDatabase.getDatabase(requireActivity()).clientDao();
-
-                clientDao.insertClient(client);*/
+        cartId = new Long(10);
+        cartWithProductsViewModel = new ViewModelProvider(requireActivity()).get(CartWithProductsViewModel.class);
 
 
-                /*clientViewModel.getAllClients()
-                    .observe(requireActivity(), clients -> {
-
-                        System.out.println(clients.size());
-                    for (Client c:
-                         clients) {
-                        TextView tw = new TextView(getContext());
-                        tw.setText(String.valueOf(c.getId()));
-                        layout.addView(tw);
-                    }
-                });*/
-
-            }
+        cartWithProductsViewModel.getCarWithProductsList(cartId).observe(getViewLifecycleOwner(), list -> {
+            cartListAdapter.submitList(list);
         });
-
-
-        btn.setGravity(Gravity.CENTER_HORIZONTAL);
-
-        layout.addView(btn);
 
         return view;
     }

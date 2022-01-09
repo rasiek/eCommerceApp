@@ -2,30 +2,57 @@ package fr.cristhiancasierra.prenApp.entities;
 
 
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
-@Entity(tableName = "order")
+@Entity(tableName = "order",
+        foreignKeys = {
+        @ForeignKey(entity = Seller.class,
+                    parentColumns = "id",
+                    childColumns = "sellerId"
+        )
+        })
 public class Order {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
-    private List<Product> products;
     private String status;
     private String clientName;
     private String clientEmail;
     private String clientAddress;
     private String clientPhone;
+    private long sellerId;
+    private Date dateOrder;
 
-    public Order(List<Product> products, String status, String clientName, String clientEmail, String clientAddress, String clientPhone) {
-        this.products = products;
+    public long getSellerId() {
+        return sellerId;
+    }
+
+    public void setSellerId(long sellerId) {
+        this.sellerId = sellerId;
+    }
+
+    public Order(String status, String clientName, String clientEmail, String clientAddress, String clientPhone, long sellerId, Date dateOrder) {
         this.status = status;
         this.clientName = clientName;
         this.clientEmail = clientEmail;
         this.clientAddress = clientAddress;
         this.clientPhone = clientPhone;
+        this.sellerId = sellerId;
+        this.dateOrder = dateOrder;
+    }
+
+    public Date getDateOrder() {
+        return dateOrder;
+    }
+
+    public void setDateOrder(Date dateOrder) {
+        this.dateOrder = dateOrder;
     }
 
     public int getId() {
@@ -34,14 +61,6 @@ public class Order {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public List<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts(List<Product> products) {
-        this.products = products;
     }
 
     public String getStatus() {
@@ -82,5 +101,18 @@ public class Order {
 
     public void setClientPhone(String clientPhone) {
         this.clientPhone = clientPhone;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Order order = (Order) o;
+        return id == order.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
