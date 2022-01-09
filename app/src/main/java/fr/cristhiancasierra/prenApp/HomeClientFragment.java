@@ -85,17 +85,12 @@ public class HomeClientFragment extends Fragment {
             vm.setId(id);
 
             clientViewModel.getClientById(id).observe(getViewLifecycleOwner(), clientDb -> {
-
-
                 this.client = clientDb;
                 title.setText("Bonjour, " + client.getFirstname());
-
             });
 
         } else {
-
             title.setText("Bonjour");
-
         }
 
         return view;

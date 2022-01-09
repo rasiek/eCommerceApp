@@ -38,10 +38,6 @@ public class HomeActivity extends AppCompatActivity {
     private NavGraph graph;
     private NavArgument argument;
 
-    private FragmentManager fragmentManager;
-    private Fragment currentFragment;
-    private Fragment fragment;
-
 
 
 

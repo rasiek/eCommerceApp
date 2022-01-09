@@ -16,9 +16,6 @@
         <argument
             android:name="id"
             app:argType="long" />
-        <action
-            android:id="@+id/action_home_client_fragment_to_productFragment"
-            app:destination="@id/productFragment" />
     </fragment>
     <fragment
         android:id="@+id/cart_fragment"
@@ -49,29 +46,17 @@
         <action
             android:id="@+id/action_search_fragment_to_searchResultFragment"
             app:destination="@id/searchResultFragment" />
-        <action
-            android:id="@+id/action_search_fragment_to_productFragment"
-            app:destination="@id/productFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchResultFragment"
         android:name="fr.cristhiancasierra.prenApp.SearchResultFragment"
         android:label="fragment_search_result"
-        tools:layout="@layout/fragment_search_result" >
-        <action
-            android:id="@+id/action_searchResultFragment_to_productFragment"
-            app:destination="@id/productFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_search_result" />
     <fragment
         android:id="@+id/clientOrdersFragment"
         android:name="fr.cristhiancasierra.prenApp.ClientOrdersFragment"
         android:label="fragment_client_orders"
         tools:layout="@layout/fragment_client_orders" />
-    <fragment
-        android:id="@+id/productFragment"
-        android:name="fr.cristhiancasierra.prenApp.ProductFragment"
-        android:label="fragment_product"
-        tools:layout="@layout/fragment_product" />
     <fragment
         android:id="@+id/clientAccountGestionFragment"
         android:name="fr.cristhiancasierra.prenApp.ClientAccountGestionFragment"

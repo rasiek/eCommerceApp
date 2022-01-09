@@ -10,14 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrenApp">
         <activity
-            android:name=".AccountGestionClientActivity"
-            android:exported="false" />
-        <activity
             android:name=".PasswordRecoveryActivity"
             android:exported="false" />
-        <activity
-            android:name=".BaseClientActivity"
-            android:exported="true" />
         <activity
             android:name=".AccountGestionProActivity"
             android:exported="true" />
@@ -35,18 +29,6 @@
             android:exported="true" />
         <activity
             android:name=".AddProductActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ProductActivity"
-            android:exported="true" />
-        <activity
-            android:name=".OrderActivity"
-            android:exported="true" />
-        <activity
-            android:name=".AccountClientActivity"
-            android:exported="true" />
-        <activity
-            android:name=".CartActivity"
             android:exported="true" />
         <activity
             android:name=".SignupActivity"

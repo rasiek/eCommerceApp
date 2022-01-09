@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import fr.cristhiancasierra.prenApp.ViewModels.ClientViewModel;
 
@@ -58,6 +59,8 @@ public class LoginActivity extends AppCompatActivity {
                                 intent.putExtra("id", client.getId());
                                 startActivity(intent);
                             } else {
+
+                                Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
 
                             }
 

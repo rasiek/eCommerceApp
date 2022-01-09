@@ -2,6 +2,7 @@ package fr.cristhiancasierra.prenApp.entities;
 
 
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "product")
@@ -36,6 +37,7 @@ public class Product {
         this.sellerId = sellerId;
     }
 
+    @Ignore
     public Product(String name, String price) {
         this.name = name;
         this.price = price;

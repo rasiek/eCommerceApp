@@ -1,49 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignupActivity"
-    android:orientation="vertical">
+    >
 
     <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="50dp"
         android:gravity="clip_horizontal"
+        android:textColor="@color/primary"
+        android:id="@+id/title_signup_type"
         android:text="Sign up"
         android:textSize="50dp"/>
 
+    <View
+        app:layout_constraintTop_toBottomOf="@id/title_signup_type"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="100dp"
+        style="@style/HorizontalLine"
+        android:id="@+id/line_signup_type"
+        />
+
 
     <TextView
+        app:layout_constraintTop_toBottomOf="@id/line_signup_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Account type"
-        android:textSize="50dp" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="Select account type"
+        android:id="@+id/subtitle_signup_type"
+        android:textSize="30dp" />
 
     <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="50dp"
-    android:layout_gravity="center"
-    android:layout_marginTop="150dp">
+        android:layout_width="wrap_content"
 
-    <ImageButton
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/ic_baseline_person_24"
-        android:layout_marginRight="50dp"
-        android:id="@+id/client_signup_btn"
-        />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle_signup_type">
 
-    <ImageButton
-        android:id="@+id/pro_signup_btn"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/ic_baseline_people_24"
-        />
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/client_signup_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_baseline_person_24" />
 
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/pro_signup_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="@drawable/ic_baseline_people_24" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
