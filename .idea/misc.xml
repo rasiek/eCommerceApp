@@ -7,10 +7,9 @@
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_advanced_search.xml" value="0.25416666666666665" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_base_client.xml" value="0.25416666666666665" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_cart.xml" value="0.15104166666666666" />
-        <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_db_test.xml" value="0.20652173913043478" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_home_pro.xml" value="0.25416666666666665" />
-        <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_login.xml" value="0.4" />
+        <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_login.xml" value="0.13020833333333334" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_product.xml" value="0.25416666666666665" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_search.xml" value="0.4" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_signup.xml" value="0.2" />
@@ -18,19 +17,36 @@
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_signup_pro.xml" value="0.15104166666666666" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/activity_x.xml" value="0.14947916666666666" />
-        <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_account_pro.xml" value="0.1897644927536232" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_cart.xml" value="0.24010416666666667" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_home_client.xml" value="0.25416666666666665" />
-        <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_home_pro.xml" value="0.1897644927536232" />
-        <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_orders.xml" value="0.1897644927536232" />
-        <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_products.xml" value="0.1897644927536232" />
-        <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_promotions.xml" value="0.1897644927536232" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_search.xml" value="0.22554347826086957" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_search_result.xml" value="0.22554347826086957" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/layout/fragment_third.xml" value="0.22871376811594202" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/menu/client_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/menu/my_menu.xml" value="0.20885416666666667" />
-        <entry key="..\:/Documents/Cours/mobile/e-commerce/eCommerceApp/app/src/main/res/menu/pro_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_account_gestion.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_account_gestion_client.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_account_gestion_pro.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_home_pro.xml" value="0.11197916666666667" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_login.xml" value="0.11197916666666667" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_order.xml" value="0.18206521739130435" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_product.xml" value="0.11197916666666667" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_signup.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_signup_client.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/card_products.xml" value="0.1" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/fragment_account_pro.xml" value="0.33" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/fragment_add_product.xml" value="0.17" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/fragment_add_promo.xml" value="0.22" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/fragment_home_client.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/fragment_home_pro.xml" value="0.17" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/fragment_orders.xml" value="0.11197916666666667" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/fragment_products.xml" value="0.25" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/fragment_promotions.xml" value="0.1296875" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/fragment_search.xml" value="0.11197916666666667" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/list_adapter.xml" value="0.15" />
+        <entry key="..\:/Users/kenza/AndroidStudioProjects/eCommerceApp/app/src/main/res/layout/liste_adapter_promos.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

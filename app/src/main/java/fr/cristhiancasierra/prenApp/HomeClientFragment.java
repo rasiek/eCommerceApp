@@ -47,7 +47,7 @@ public class HomeClientFragment extends Fragment {
         idLong = getArguments().getLong("id");
 
         id = (int) idLong;
-
+/*
         clientViewModel.getClientById(id).observe(requireActivity(), clientBd -> {
 
             Client client = clientBd;
@@ -62,8 +62,14 @@ public class HomeClientFragment extends Fragment {
 
         });
 
-        title.setText(client.getFirstname());
+
+ */
+
+        title.setText("bonjour");
 
         return view;
     }
+
+
+
 }

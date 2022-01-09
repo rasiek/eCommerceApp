@@ -49,9 +49,6 @@
             android:name=".CartActivity"
             android:exported="true" />
         <activity
-            android:name=".XActivity"
-            android:exported="true" />
-        <activity
             android:name=".SignupActivity"
             android:exported="true" />
         <activity

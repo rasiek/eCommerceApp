@@ -25,6 +25,13 @@ public class Promotion {
         this.reduction = reduction;
     }
 
+    public Promotion(int productId,float reduction, Date dateEnd) {
+        this.productId = productId;
+        this.reduction = reduction;
+        DateEnd = dateEnd;
+    }
+
+
     public int getId() {
         return id;
     }
